@@ -2,7 +2,7 @@ def reverse_each_word(string)
   array = string.split(" ")
   phrase = ""
   reversed_word = ""
-  array.each do |word|
+  array.collect do |word|
     phrase << word.reverse! + " "
   end
   phrase.chop
@@ -13,6 +13,5 @@ def reverse_each_word(string)
   reversed_word = ""
   array.collect do |word|
     phrase << word.reverse! + " "
-    phrase.chop
   end
 end
