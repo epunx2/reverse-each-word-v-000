@@ -14,4 +14,5 @@ def reverse_each_word(string)
   array.collect do |word|
     phrase << word.reverse! + " "
   end
+  phrase.chop
 end
