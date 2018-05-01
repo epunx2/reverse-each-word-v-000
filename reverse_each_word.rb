@@ -1,5 +1,5 @@
 def reverse_each_word(string)
-  string.join
+  string.split(",")
   phrase = ""
   string.each do |word|
     phrase = phrase + word.reverses
