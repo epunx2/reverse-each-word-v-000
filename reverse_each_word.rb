@@ -4,7 +4,7 @@ def reverse_each_word(string)
   reversed_word = ""
   array.each do |word|
     reversed_word = word.reverse!
-    phrase = "#{phrase} #{reversed_word}""
+    phrase = phrase + " #{reversed_word}"
   end
   puts phrase
 end
